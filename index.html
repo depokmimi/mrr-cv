@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>CV — Muhamad Ramdhani Rachmansyah</title>
+<meta name="description" content="Curriculum Vitae Muhamad Ramdhani Rachmansyah.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  :root {
+    --bg:#0b0b0b; --ink:#f2f2f2; --dim:#8f8f8f; --faint:#4a4a4a;
+    --hair:#1e1e1e; --accent:#f5d90a;
+  }
+  html { -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; }
+  body {
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    min-height:100vh;
+  }
+  .wrap { max-width:680px; margin:0 auto; padding:0 22px 56px; }
+
+  /* ---- header ---- */
+  .head { padding:60px 0 8px; }
+  .head .label {
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:11px; letter-spacing:3px; color:var(--dim);
+    display:flex; align-items:center; gap:10px;
+  }
+  .head .label .sq { width:8px; height:8px; background:var(--accent); flex-shrink:0; }
+  .head h1 {
+    font-size:clamp(34px,9.5vw,54px); font-weight:800; letter-spacing:.01em; line-height:1.08;
+    margin-top:20px; text-wrap:balance;
+  }
+  .head .role { margin-top:12px; font-size:14px; color:var(--dim); letter-spacing:.5px; }
+  .head .meta {
+    margin-top:14px; font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:11px; letter-spacing:2px; color:var(--faint);
+  }
+
+  /* ---- sections ---- */
+  .sec-label {
+    margin:44px 0 0; padding-bottom:12px;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:11px; letter-spacing:3px; color:var(--dim);
+    border-bottom:1px solid var(--hair);
+    display:flex; justify-content:space-between; align-items:baseline;
+  }
+  .sec-label .count { color:var(--faint); }
+
+  .summary { padding:20px 4px 4px; font-size:14.5px; color:var(--dim); line-height:1.7; text-wrap:pretty; max-width:56ch; }
+  .summary strong { color:var(--ink); font-weight:600; }
+
+  /* ---- experience ---- */
+  .job { padding:20px 4px; border-bottom:1px solid var(--hair); }
+  .job .top { display:flex; align-items:baseline; gap:12px; }
+  .job .when {
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:11px; letter-spacing:1.5px; color:var(--accent); white-space:nowrap; flex-shrink:0;
+  }
+  .job h2 { font-size:17px; font-weight:700; letter-spacing:.01em; flex:1; text-wrap:balance; }
+  .job .where { font-size:12.5px; color:var(--faint); margin-top:3px; letter-spacing:.5px; }
+  .job p { margin-top:8px; font-size:13.5px; color:var(--dim); line-height:1.6; text-wrap:pretty; max-width:56ch; }
+  .job.current .when { color:#0a0a0a; background:var(--accent); border-radius:999px; padding:4px 10px; font-weight:700; }
+
+  /* ---- contact ---- */
+  .contact a {
+    display:flex; justify-content:space-between; align-items:center; gap:12px;
+    padding:16px 4px; text-decoration:none; color:var(--ink); font-size:15px; font-weight:550;
+    border-bottom:1px solid var(--hair);
+    transition-property:background-color,padding-left;
+    transition-duration:180ms; transition-timing-function:ease-out;
+  }
+  .contact a span:last-child { color:var(--faint); font-size:13px; font-weight:400; text-align:right; }
+  .contact a:active { background-color:#131313; }
+  @media(hover:hover){
+    .contact a:hover { background-color:#111111; padding-left:12px; }
+    .contact a:hover span:last-child { color:var(--accent); }
+  }
+
+  footer { margin-top:52px; display:flex; justify-content:space-between; align-items:baseline; gap:12px;
+    font-family:ui-monospace,SFMono-Regular,Menlo,monospace; font-size:11px; letter-spacing:2px; color:var(--faint); }
+
+  /* ---- entrance ---- */
+  .rise { opacity:0; transform:translateY(14px); animation:rise .6s ease-out forwards; }
+  .rise.d1{animation-delay:.05s} .rise.d2{animation-delay:.12s} .rise.d3{animation-delay:.19s}
+  .rise.d4{animation-delay:.26s}
+  @keyframes rise { to { opacity:1; transform:none; } }
+  @media (prefers-reduced-motion:reduce){ .rise{opacity:1; transform:none; animation:none;} }
+
+  /* ---- print ---- */
+  @media print {
+    body { background:#fff; color:#111; }
+    .wrap { max-width:100%; padding:0; }
+    .head .label, .head .meta, .sec-label, footer { color:#666; }
+    .head h1, .job h2, .contact a { color:#111; }
+    .summary, .job p, .job .where, .head .role { color:#333; }
+    .rise { opacity:1; transform:none; animation:none; }
+    .contact a span:last-child { color:#666; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="head">
+    <div class="label rise d1"><span class="sq"></span>CURRICULUM VITAE</div>
+    <h1 class="rise d2">Muhamad Ramdhani Rachmansyah</h1>
+    <p class="role rise d3">Mitra Pengemudi · Fotografer · Depok, Indonesia</p>
+    <div class="meta rise d3">CV.MRR.AI.ID</div>
+  </header>
+
+  <div class="sec-label rise d4"><span>RINGKASAN</span></div>
+  <p class="summary rise d4"><strong>Kreatif, tepat waktu, dan mudah bersosialisasi.</strong> Berpengalaman di berbagai bidang — layanan pelanggan, operasional ritel, kebersihan profesional, hingga perbaikan perangkat — dengan rekam jejak menyelesaikan pekerjaan secara efisien dan ceria.</p>
+
+  <div class="sec-label rise d4"><span>PENGALAMAN</span><span class="count">09</span></div>
+
+  <div class="job current rise d4">
+    <div class="top"><span class="when">SEKARANG</span><h2>Mitra Pengemudi</h2></div>
+    <div class="where">Gojek · Grab — Depok</div>
+    <p>Melayani perjalanan dan pengiriman harian dengan rating kepuasan pelanggan yang terjaga.</p>
+  </div>
+
+  <div class="job rise d4">
+    <div class="top"><h2>Customer Service</h2></div>
+    <div class="where">PT Trikomsel Oke Tbk</div>
+    <p>Menangani keluhan dan pertanyaan pelanggan terkait produk dengan solusi yang tepat dan komunikatif.</p>
+  </div>
+
+  <div class="job rise d4">
+    <div class="top"><h2>Teknisi Laptop</h2></div>
+    <div class="where">Asus Indonesia</div>
+    <p>Diagnosa kerusakan serta perbaikan perangkat keras dan perangkat lunak pada laptop.</p>
+  </div>
+
+  <div class="job rise d4">
+    <div class="top"><h2>Staf Toko</h2></div>
+    <div class="where">PT Indomarco Prismatama (Indomaret)</div>
+    <p>Melayani pelanggan, mengelola stok barang di rak, dan menjaga kebersihan area toko.</p>
+  </div>
+
+  <div class="job rise d4">
+    <div class="top"><h2>Operator Mesin Hydro Vakum</h2></div>
+    <div class="where">CV Helloklin Indonesia</div>
+    <p>Mengoperasikan mesin hydro vakum dengan mengutamakan ketepatan dan efisiensi kerja.</p>
+  </div>
+
+  <div class="job rise d4">
+    <div class="top"><h2>Housekeeping Hotel</h2></div>
+    <div class="where">PT Buana Mitra Usaha</div>
+    <p>Menjaga standar kebersihan dan kenyamanan kamar serta area hotel sesuai prosedur operasional perhotelan.</p>
+  </div>
+
+  <div class="job rise d4">
+    <div class="top"><h2>Cleaning Service — Head Office</h2></div>
+    <div class="where">Modena Indonesia</div>
+    <p>Pemeliharaan kebersihan dan kerapihan area Head Office untuk mendukung kenyamanan kerja karyawan.</p>
+  </div>
+
+  <div class="job rise d4">
+    <div class="top"><h2>Cleaning Service — Publik Area</h2></div>
+    <div class="where">PT ISS Indonesia</div>
+    <p>Pemeliharaan kebersihan area publik di pusat perbelanjaan.</p>
+  </div>
+
+  <div class="job rise d4">
+    <div class="top"><h2>Cleaning Service — Apartemen</h2></div>
+    <div class="where">PT Carefastindo · Apartment Puri Mansion</div>
+    <p>Bertanggung jawab atas pemeliharaan kebersihan dan kerapihan area apartemen.</p>
+  </div>
+
+  <section class="contact rise d4">
+    <div class="sec-label"><span>KONTAK</span></div>
+    <a href="https://wa.me/6285811053787"><span>WhatsApp</span><span>0858 1105 3787 →</span></a>
+    <a href="mailto:me@muramsyah.biz.id"><span>Email</span><span>me@muramsyah.biz.id →</span></a>
+    <a href="https://instagram.com/muramsyah"><span>Instagram</span><span>@muramsyah →</span></a>
+  </section>
+
+  <footer class="rise d4">
+    <span>© 2026 MURAMSYAH GROUP</span><span>CV.MRR.AI.ID</span>
+  </footer>
+
+</div>
+</body>
+</html>
